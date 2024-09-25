@@ -1,0 +1,212 @@
+#bodyStart {
+    background: linear-gradient(to bottom, #84B518,#579723,#3A6600);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+margin-bottom: 10px;
+}
+
+/* Corpo centralizado e responsivo */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    background-color: #f4f4f9; /* Cor de fundo suave */
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"] {
+    width: 90px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#name {
+    width: 320px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.25);
+}
+
+/* Resultado com fundo verde para aprovado */
+#res {
+    background-color: greenyellow;
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para as mensagens de aprovação ou reprovação */
+#naoPassou, #Passou {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.20s ease;
+}
+
+#naoPassou {
+    background-color: red;
+}
+
+#Passou {
+    background-color: green;
+}
+
+#naoPassou:hover, #Passou:hover {
+    transform: scale(1.15);
+}
+
+/* Estilos para pass/fail */
+.pass {
+    background-color: #d4edda; /* Verde claro para aprovado */
+    color: #155724;
+}
+
+.fail {
+    background-color: #f8d7da; /* Vermelho claro para reprovado */
+    color: #721c24;
+}
+
+/* Estilo para o cabeçalho (títulos) */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #5D9E0F;
+}
+
+/* Estilo para o botão de início */
+#start {
+    background-color: #45a049;
+    font-size: large;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+border-radius: 50px;
+animation: pulse 1.0s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+    
+
+#start:hover {
+    background-color: #3a8d40;
+    transform: scale(1.1);
+}
+
+/* Estilo do logo */
+#logo1 {
+    width: 200px;
+    height: 200px;
+    margin-top: -20px;
+
+}
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    input[type="text"], #name {
+        width: 90%; /* Alarga os inputs para caberem em dispositivos móveis */
+    }
+
+    #res, #naoPassou, #Passou {
+        width: 90%; /* Largura total da tela em dispositivos móveis */
+    }
+
+    button {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em; /* Diminui o tamanho dos títulos em telas menores */
+    }
+}
+#welcome{
+color: white;
+padding-left: 50px;
+padding-right: 50px;
+
+}
+#function{
+ font-family: "Gowun Batang", serif;
+background-color: #7CA50E;
+margin-left: 20%;
+margin-right: 20%;
+border-radius: 40px;
+font-size: 20px;
+
+
+}
+
+#yourmedia{
+color: #1A5D61;
+
+
+}
+#name{
+
+
+    border-radius: 40px;
+}
+#notas{
+margin-left: 40px;
+margin-right: 40px;
+
+}
+#button{
+    animation: pulse 1.0s infinite;
+
+
+}
